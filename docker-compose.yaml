@@ -19,7 +19,7 @@ services:
     container_name: php
     build:
       context: .
-      dockerfile: ./php/Dockerfile
+      dockerfile: ./docker/php/Dockerfile
     volumes:
       - ./web/:/var/www/html
     ports:
