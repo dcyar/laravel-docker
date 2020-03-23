@@ -18,8 +18,8 @@ case ${answer:0:1} in
         docker volume prune -f
         echo "INFO: Pruning unused docker networks"
         docker network prune -f
-        echo "INFO: Removing directories and contents (logs/ mysql/ web/)"
-        rm -rf docker/logs/ docker/mysql/ docker/web/
+        echo "INFO: Removing directories and contents (logs/ mysql/ php/ web/)"
+        rm -rf docker/logs/ docker/mysql/ docker/php/ docker/web/
         echo "INFO: Done"
         exit 0;
     ;;
